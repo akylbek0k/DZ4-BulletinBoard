@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAIRS / BOARD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+    <header>
+        <div class="logo">CHAIRS<span>/</span>BOARD</div>
+        <div class="nav">ALL ADS &nbsp;&nbsp; POST AD</div>
+        <div class="online"><i></i> ONLINE</div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-text">
+                <p class="small">COMMUNITY MARKETPLACE</p>
+                <h1>FIND IT.<br><span>SELL IT.</span></h1>
+                <p class="description">
+                    Доска объявлений, где можно посмотреть
+                    товары и разместить своё объявление.
+                </p>
+                <a href="#ads" class="discover">DISCOVER ADS ↘</a>
+            </div>
+
+            <div class="hero-chair">
+                <div class="price">NEW<br>ARRIVALS</div>
+                <div class="chair-shape"></div>
+            </div>
+        </section>
+
+        <section class="content">
+
+            <div class="section-title" id="ads">
+                <div>
+                    <p class="small">01 / MARKETPLACE</p>
+                    <h2>ALL<br><span>ADS.</span></h2>
+                </div>
+                <button id="reloadButton" class="reload">↻ RELOAD</button>
+            </div>
+
+            <div id="adsList" class="ads-list">
+                <div class="loading">LOADING ADS...</div>
+            </div>
+
+            <section class="post-section">
+                <div class="post-title">
+                    <p class="small">02 / SELL SOMETHING</p>
+                    <h2>POST<br><span>AN AD.</span></h2>
+                </div>
+
+                <form id="adForm">
+                    <div class="form-row">
+                        <div class="field">
+                            <label>ЗАГОЛОВОК</label>
+                            <input id="title" type="text" placeholder="Например: Продаю ноутбук" required>
+                        </div>
+
+                        <div class="field">
+                            <label>ЦЕНА</label>
+                            <input id="price" type="number" step="0.01" placeholder="45000" required>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label>ОПИСАНИЕ</label>
+                        <textarea id="description" placeholder="Расскажите о товаре..." required></textarea>
+                    </div>
+
+                    <div class="field">
+                        <label>ИЗОБРАЖЕНИЕ</label>
+                        <input id="image" type="file" accept="image/*">
+                    </div>
+
+                    <button type="submit" class="post-button">
+                        PUBLISH AD <span>↗</span>
+                    </button>
+                </form>
+
+                <div id="message"></div>
+            </section>
+
+        </section>
+    </main>
+
+    <footer>
+        <span>CHAIRS / BOARD — 2026</span>
+        <span>GET + POST API</span>
+        <span>FRONT-END PROJECT</span>
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
